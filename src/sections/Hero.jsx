@@ -13,12 +13,12 @@ const Hero = () => {
       id="home"
       className="w-full flex xl:flex-row flex-col justify-center min-h-screen p-2 gap-10 max-container "
     >
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28 ">
+      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28 border border-green-700 ">
         <p className="text-x1 font-montserrat text-coral-red">
           Our Summer Collection
         </p>
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold border border-red-500">
+          <span className="xl:bg-white xl:whitespace-nowrap relative whitespace-pre-line z-10 pr-10 ">
             The New Arrival
           </span>
           <br />
@@ -30,7 +30,7 @@ const Hero = () => {
         </p>
         <Button label="Shop Now" iconURL={arrowRight} />
 
-        <div className="flex justify-starts items-start flex-wrap w-full mt-20 gap-16 ">
+        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16 ">
           {statistics.map((stat, index) => (
             <div key={stat.label}>
               <p className="text-4xl font-palanquin font-bold">{stat.value}</p>

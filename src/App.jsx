@@ -17,7 +17,7 @@ function App() {
         <Hero />
       </section>
 
-      <section className=" padding">
+      <section className="padding border border-green-600">
         <PopularProducts />
       </section>
 
