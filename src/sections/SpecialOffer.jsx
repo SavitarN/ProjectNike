@@ -1,6 +1,7 @@
 import React from "react";
 import { offer } from "../assets/images";
 import Button from "../components/Button";
+import { arrowRight } from "../assets/icons";
 const SpecialOffer = () => {
   return (
     <section className="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
@@ -26,9 +27,15 @@ const SpecialOffer = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
           doloremque!
         </p>
-        <div className="mt-11">
+        <div className="mt-11 flex flex-wrap gap-4">
           {" "}
-          <Button label="View Details" />
+          <Button label="Shop Now" iconURL={arrowRight} />
+          <Button
+            label="Learn More"
+            backgroundColor="bg-white"
+            borderColor="border-slate-gray"
+            textColor="text-slate=gray"
+          />
         </div>
       </div>
     </section>
